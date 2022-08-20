@@ -4,7 +4,7 @@ defmodule GenDockerDb.MixProject do
   def project do
     [
       app: :gen_docker_db,
-      version: "0.2.0",
+      version: "0.3.0",
       elixir: "~> 1.13",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env() == :prod,
@@ -33,7 +33,7 @@ defmodule GenDockerDb.MixProject do
   end
 
   defp build_releases(_) do
-    {output, _} =System.cmd("mix", ["archive.build"], env: [{"MIX_ENV", "prod"}])
+    {output, _} = System.cmd("mix", ["archive.build"], env: [{"MIX_ENV", "prod"}])
     IO.puts output
   end
 end

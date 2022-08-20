@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.GenDockerDb do
+defmodule Mix.Tasks.How.To.Docker.Postgres do
   @moduledoc "Prints the docker command used to start a postgres db"
   @shortdoc "Setup for postgres docker"
 
